@@ -1,10 +1,10 @@
 ﻿; Visual Char/Block/Line
 #If Vim.IsVimGroup() and (Vim.State.IsCurrentVimMode("Vim_Normal"))
 v::Vim.State.SetMode("Vim_VisualChar")
-^v::
-  Send, ^b
-  Vim.State.SetMode("Vim_VisualChar")
-Return
+;^v::
+;  Send, ^b
+;  Vim.State.SetMode("Vim_VisualChar")
+;Return
 
 +v::
   Vim.State.SetMode("Vim_VisualLineFirst")
