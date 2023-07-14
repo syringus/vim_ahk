@@ -27,9 +27,15 @@ Space::
 Return
 
 #If Vim.IsVimGroup() and (Vim.State.IsCurrentVimMode("Command_q"))
+a::
+  ; mserik: Close all opened editor tabs.
+  Send, ^+w
+  Vim.State.SetMode("Vim_Normal")
+Return
 Return::
-  Send, !{F4}
-  Vim.State.SetMode("Insert")
+  ; mserik: Close active editor tab.
+  Send, ^w
+  Vim.State.SetMode("Vim_Normal")
 Return
 
 #If
