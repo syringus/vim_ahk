@@ -100,7 +100,9 @@ Return
 
 +p::
   if(Vim.State.LineCopy == 1){
-    Send, {Up}{End}{Enter}^v{BS}{Home}
+    ; Send, {Up}{End}{Enter}^v{BS}{Home}
+    ; mserik: altered to suit CODESYS
+    Send, {Home 2}{Enter}{Up}^v{BS}{Up}{End}{Enter}{Delete}
   }else{
     Send, ^v
     ;Send,^{Left}
