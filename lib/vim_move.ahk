@@ -164,9 +164,9 @@
         }
       }else if(key == "b"){
         if(this.shift == 1){
-          Send, +^{Left}+^{Left}
+          Send, +^{Left}
         }else{
-          Send, ^{Left}^{Left}
+          Send, ^{Left}
         }
       }
     }
