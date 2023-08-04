@@ -152,21 +152,21 @@
       ; Words
       }else if(key == "w"){
         if(this.shift == 1){
+          Send, +^{Right}+^{Right}
+        }else{
+          Send, ^{Right}^{Right}
+        }
+      }else if(key == "e"){
+        if(this.shift == 1){
           Send, +^{Right}
         }else{
           Send, ^{Right}
         }
-      }else if(key == "e"){
-        if(this.shift == 1){
-          Send, +^{Right}+^{Right}+{Left}
-        }else{
-          Send, ^{Right}^{Right}{Left}
-        }
       }else if(key == "b"){
         if(this.shift == 1){
-          Send, +^{Left}
+          Send, +^{Left}+^{Left}
         }else{
-          Send, ^{Left}
+          Send, ^{Left}^{Left}
         }
       }
     }
