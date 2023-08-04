@@ -35,7 +35,7 @@ Return
 Return
 
 #If Vim.IsVimGroup() and (Vim.State.IsCurrentVimMode("Vim_Normal"))
-Space::Send, {Right}
+Space::Send, {Space}
 
 ; period
 .::Send, +^{Right}{BS}^v
