@@ -64,6 +64,7 @@ class VimAhk{
 
     ; Need Home twice
     GroupAdd, VimDoubleHomeGroup, ahk_exe Code.exe ; Visual Studio Code
+    GroupAdd, VimDoubleHomeGroup, ahk_exe CODESYS.exe ; CODESYS IDE
 
     ; Followings can emulate ^. For others, ^ works as same as 0
     ; It does not work for NotePad at Windows 11
