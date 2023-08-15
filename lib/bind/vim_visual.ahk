@@ -8,7 +8,9 @@ v::Vim.State.SetMode("Vim_VisualChar")
 
 +v::
   Vim.State.SetMode("Vim_VisualLineFirst")
-  Send, {Home}+{Down}
+  ; Send, {Home}+{Down}
+  ; mserik For CODESYS.exe
+  Send, {Home 2}+{Down}
 Return
 
 #If Vim.IsVimGroup() and (Vim.State.StrIsInCurrentVimMode("Visual"))
