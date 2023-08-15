@@ -14,12 +14,16 @@ a::
 Return
 
 +a::
-  Send, {End}
+  ; Send, {End}
+  ; mserik For CODESYS.exe.
+  Send, {End 2}
   Vim.State.SetMode("Insert")
 Return
 
 o::
-  Send,{End}{Enter}
+  ; Send,{End}{Enter}
+  ; mserik For CODESYS.exe.
+  Send,{End 2}{Enter}
   Vim.State.SetMode("Insert")
 Return
 
