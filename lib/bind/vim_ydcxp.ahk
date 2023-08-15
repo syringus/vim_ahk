@@ -86,7 +86,9 @@ p::
     if WinActive("ahk_group VimNoLBCopyGroup"){
       Send, {End}{Enter}^v{Home}
     }else{
-      Send, {End}{Enter}^v{BS}{Home}
+      ; Send, {End}{Enter}^v{BS}{Home}
+      ; mserik: altered to suit CODESYS
+      Send, {End}{Enter}{Shift Down}{Home}{Shift Up}^v{BS}{Home}
     }
   }else{
     Send, {Right}
